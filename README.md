@@ -1,9 +1,10 @@
-# JavaScript Code Compiler and Executor
+[![esbuild-wasm](https://img.shields.io/badge/esbuild--wasm-0.8.27-4a90e2?logo=javascript)](https://esbuild.github.io/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-%5E5.2.2-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-%5E18.2.0-61dafb?logo=react)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-%5E5.0.8-646cff?logo=vite)](https://vitejs.dev/)
+[![Yarn](https://img.shields.io/badge/Yarn-latest-2c8ebb?logo=yarn)](https://yarnpkg.com/)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/your-repository)
-![GitHub contributors](https://img.shields.io/github/contributors/your-username/your-repository)
-![GitHub stars](https://img.shields.io/github/stars/your-username/your-repository?style=social)
-![GitHub forks](https://img.shields.io/github/forks/your-username/your-repository?style=social)
+# JavaScript Code Compiler and Executor
 
 A web-based application capable of compiling, transpiling, building, and executing JavaScript code. It allows users to import libraries from the npm registry, including React. The app utilizes Esbuild-wasm for these tasks directly in the browser environment.
 

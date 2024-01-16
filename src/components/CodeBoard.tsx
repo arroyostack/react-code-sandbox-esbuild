@@ -6,17 +6,16 @@ import { CodeEditor } from '../components/CodeEditor';
 import { startService } from "../esbuiild/startService";
 import { Button } from "./widgets/Button";
 import { Navbar } from "./widgets/Navbar";
-
+import { reactCodeTemplate } from '../html-boilerplate/ReactCodeEditorTemplate';
 
 export const CodeBoard = () => {
     const ref = useRef<any>();
     const iframe = useRef<any>();
-    const [input, setInput] = useState( '' );
+    const [input, setInput] = useState( reactCodeTemplate );
 
     useEffect( () => {
         startService( ref );
     }, [] );
-
 
     const handleClick = async () => {
         if ( !ref.current ) return;
@@ -46,28 +45,29 @@ export const CodeBoard = () => {
         <>
             <Navbar>
                 <Button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                    className="animate-pulse bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                     onClick={ handleClick }>
                     Run Code!
                 </Button>
             </Navbar>
 
 
-            <div className="container">
-                <div className="screen">
+            <div
+                style={ { minWidth: "100%", minHeight: "100vh" } }
+                className="bg-gray-900 flex p-6">
+                <div className="flex-1 p-4">
                     <CodeEditor
                         input={ input }
                         setInput={ setInput }
                     />
 
                 </div>
-                <div className="screen">
+                <div style={ { height: "80vh" } } className="flex-1 p-4 bg-white">
                     <iframe
                         title="CodePreview"
                         sandbox="allow-scripts"
                         srcDoc={ htmlTemplate }
                         ref={ iframe }
-                        height="100%"
                     ></iframe>
                 </div>
 

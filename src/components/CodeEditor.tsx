@@ -11,6 +11,11 @@ interface Props {
 
 export const CodeEditor = ( { input, setInput }: Props ) => {
     return (
-        <CodeMirror theme={ tokyoNight } value={ input } height="80vh" extensions={ [javascript( { jsx: true } )] } onChange={ ( event: string ) => setInput( event ) } />
+        <CodeMirror
+            theme={ tokyoNight }
+            value={ input }
+            height="80vh"
+            extensions={ [javascript( { jsx: true } )] }
+            onChange={ ( event: string ) => setInput( event ) } />
     );
 };

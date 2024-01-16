@@ -1,18 +1,12 @@
 import { CodeBoard } from "./components/CodeBoard";
 
-
-
-
-
-function App() {
-
+const App = () => {
 
   return (
     <>
       <CodeBoard />
     </>
   );
-}
-
+};
 
 export default App;

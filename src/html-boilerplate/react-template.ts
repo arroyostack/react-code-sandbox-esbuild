@@ -5,7 +5,6 @@ export const htmlTemplate: string = `
     </head>
 
     <body>
-     <h1>Hi template</h1>
         <div id="root"></div>
         <script>
             window.addEventListener('message', (event) => {

@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+}
+
+.screen {
+    flex-grow: 1;
+}

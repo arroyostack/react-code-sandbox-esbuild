@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .container {
     display: flex;
+    min-height: 80vh;
 }
 
 .screen {

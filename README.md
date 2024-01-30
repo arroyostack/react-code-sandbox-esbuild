@@ -4,7 +4,7 @@
 [![Vite](https://img.shields.io/badge/Vite-%5E5.0.8-646cff?logo=vite)](https://vitejs.dev/)
 [![Yarn](https://img.shields.io/badge/Yarn-latest-2c8ebb?logo=yarn)](https://yarnpkg.com/)
 
-# Live Demo: <a href="https://code-editor-javascript.netlify.app/" target="blank">Here</a>
+# Live Demo: <a href="https://javascript-code-editor.netlify.app/" target="blank">Here</a>
 
 # JavaScript Code Compiler and Executor
 

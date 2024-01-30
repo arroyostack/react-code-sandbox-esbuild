@@ -17,9 +17,6 @@ A web-based application capable of compiling, transpiling, building, and executi
 - Import libraries from the npm registry, including React.
 - Uses Esbuild-wasm for efficient code processing.
 
-## Credits
-
-The original idea for the plugin used in this project is from Stephen Grider, a outstanding software developer, and code mentor. The plugin addresses the challenge of not having a file system in the browser when using Esbuild-wasm.
 
 ## Beta Version
 
@@ -41,3 +38,5 @@ yarn
 ```
 yarn dev
 ```
+## Credits
+Stephen Grider, a outstanding software developer, and code mentor. Addresses the challenge of not having a file system in the browser when using EsBuild-wasm and provides a solution to intercept the bundle function.
